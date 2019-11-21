@@ -27,6 +27,7 @@ class Main{
         //Determines if the line is a comment or not
         boolean comment = line.indexOf("//") != -1? true: false;
         if(!comment){
+            //This only prints the non-comment lines
             System.out.println(line);
         }
     }
