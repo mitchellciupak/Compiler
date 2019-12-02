@@ -15,8 +15,9 @@ class Main{
             reader = new BufferedReader(new FileReader(args[0]));
             String line = reader.readLine();
             while(line != null){
-                //CALL FUNC TO TAKE ACTION ON THE LINE
+                //CALL FUNC TO PARSE THE LINE
                 parsed = LineParse(line);
+
                 //READ THE NEXT LINE
                 line = reader.readLine();
             }
@@ -25,6 +26,11 @@ class Main{
         }
     }
 
+    /*  LineParse
+    *   This function performs 2 actions
+    *       -Determines if a line is a comment, if it is, the line will be ignored
+    *       -Parses the line into its parts and returns as a String[]
+     */
     public static String[] LineParse(String line){
         //Determines if the line is a comment or not
         boolean comment = line.indexOf("//") != -1? true: false;
