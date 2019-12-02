@@ -8,6 +8,7 @@ import Language.*;
 class Main{
     public static void main(String args[]){
         //We need to call a dictionary init to build a dictionary of opp codes
+        opCode oc = new opCode();
 
         //Read in the file and send each line to the lineReader
         BufferedReader reader;
@@ -18,6 +19,7 @@ class Main{
             while(line != null){
                 //CALL FUNC TO PARSE THE LINE
                 parsed = LineParse(line);
+
 
                 //READ THE NEXT LINE
                 line = reader.readLine();
