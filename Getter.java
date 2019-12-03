@@ -43,11 +43,9 @@ public class Getter {
             case "poke":
                 poke.execute(parsed);
                 break;
-                /*
             case "popm":
                 popm.execute(parsed);
                 break;
-                */
             case "popv":
                 popv.execute(parsed);
                 break;
@@ -73,10 +71,10 @@ public class Getter {
             case "subr":
                 subr.execute(parsed);
                 break;
+                 */
             case "swp":
                 swp.execute(parsed);
                 break;
-                 */
             default:
                 System.out.println("Invalid");
                 break;
