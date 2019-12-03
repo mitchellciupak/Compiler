@@ -71,3 +71,9 @@ public class Getter {
         }
     }
 }
+
+//Command to run interpreter
+//    String[] command1 = { "g++", "-WhateverFlag", "-o", "interpreter" };
+//    Process proc1 = new ProcessBuilder(command1).start();
+//    String[] command2 = { "interpreter", "arg1", "arg2" };
+//    Process proc2 = new ProcessBuilder(command2).start();
