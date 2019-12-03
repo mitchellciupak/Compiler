@@ -54,6 +54,9 @@ public class Getter {
             case "printi":
                 printi.execute(parsed);
                 break;
+            case "ret":
+                ret.execute(parsed);
+                break;
                 /*
             case "printv":
                 printv.execute(parsed);

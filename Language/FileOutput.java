@@ -22,5 +22,20 @@ public class FileOutput {
             ex.printStackTrace();
         }
     }
-
+    public static void write(int i) {
+        try {
+            outfile.write(i);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+    public static void write(byte[] code){
+        try{
+            for(int i = code.length-1; i>=0 ; i--){
+                outfile.write(code[i]);
+            }
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
 }
