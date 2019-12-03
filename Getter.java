@@ -1,10 +1,12 @@
 import javafx.css.ParsedValue;
+import Language.*;
 
 public class Getter {
-/*    public static void chooseCode(String[] parsed){
+    public static void chooseCode(String[] parsed){
         String buffer = parsed[0];
 
         switch (buffer) {
+            /*
             case "add":
                 add.execute(parsed);
                 break;
@@ -47,9 +49,12 @@ public class Getter {
             case "popv":
                 popv.execute(parsed);
                 break;
-            case "print":
-                print.execute(parsed);
+
+             */
+            case "printi":
+                printi.execute(parsed);
                 break;
+                /*
             case "printv":
                 printv.execute(parsed);
                 break;
@@ -65,6 +70,8 @@ public class Getter {
             case "swp":
                 swp.execute(parsed);
                 break;
+
+                 */
             default:
                 System.out.println("Invalid");
                 break;

@@ -21,7 +21,9 @@ class Main{
             while(line != null){
                 //CALL FUNC TO PARSE THE LINE
                 parsed = LineParse(line);
-                
+                if(parsed != null){
+                    Getter.chooseCode(parsed);
+                }
                 //READ THE NEXT LINE
                 line = reader.readLine();
             }
