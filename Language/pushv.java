@@ -2,14 +2,12 @@ package Language;
 
 import java.nio.ByteBuffer;
 
-public class decl {
+public class pushv {
     public static void execute(String[] parsed) {
-        char c = 70;
+        int i = (int) symbolTable.ST.get(parsed[1]);
+        char c = 74;
         FileOutput.write(c);
-        int i = 0;
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
-        symbolTable.ST.put(parsed[1],symbolTable.offset++);
     }
 }
-
