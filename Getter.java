@@ -1,7 +1,7 @@
 import javafx.css.ParsedValue;
 
 public class Getter {
-    public static void chooseCode(String[] parsed){
+/*    public static void chooseCode(String[] parsed){
         String buffer = parsed[0];
 
         if (buffer == "halt") {
@@ -69,4 +69,4 @@ public class Getter {
                 break;
         }
     }
-}
+*/}
