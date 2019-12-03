@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -10,25 +11,34 @@ class Main{
         opCode oc = new opCode();
 
         //init the outfile
-        FileOutput outfile = new FileOutput();
+        FileOutput outfile;
 
         //Read in the file and send each line to the lineReader
         BufferedReader reader;
         String[] parsed = null;
-        try{
-            reader = new BufferedReader(new FileReader(args[0]));
-            String line = reader.readLine();
-            while(line != null){
-                //CALL FUNC TO PARSE THE LINE
-                parsed = LineParse(line);
-                if(parsed != null){
-                    Getter.chooseCode(parsed);
+        for(int i = 0; i < 2; i++) {
+            outfile = new FileOutput();
+            try {
+                reader = new BufferedReader(new FileReader(args[0]));
+                String line = reader.readLine();
+                while (line != null) {
+                    //CALL FUNC TO PARSE THE LINE
+                    parsed = LineParse(line);
+                    if (parsed != null) {
+                        Getter.chooseCode(parsed);
+                    }
+                    //READ THE NEXT LINE
+                    line = reader.readLine();
                 }
-                //READ THE NEXT LINE
-                line = reader.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        }catch (IOException e){
-            e.printStackTrace();
+            if(i == 0){
+                symbolTable.offset = 0;
+                //FileOutput.outfile.close();
+                File file = new File("output.bin");
+                file.delete();
+            }
         }
 
         //Run interpreter
