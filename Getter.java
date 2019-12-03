@@ -6,7 +6,7 @@ public class Getter {
         String buffer = parsed[0];
 
         switch (buffer) {
-            /*
+
             case "add":
                 add.execute(parsed);
                 break;
@@ -19,14 +19,13 @@ public class Getter {
             case "cmplt":
                 cmplt.execute(parsed);
                 break;
-                */
             case "decl":
                 decl.execute(parsed);
                 break;
-                /*
             case "div":
                 div.execute(parsed);
                 break;
+                /*
             case "jmp":
                 jmp.execute(parsed);
                 break;
@@ -36,6 +35,7 @@ public class Getter {
             case "lab":
                 lab.execute(parsed);
                 break;
+                */
             case "mul":
                 mul.execute(parsed);
                 break;
@@ -45,6 +45,7 @@ public class Getter {
             case "poke":
                 poke.execute(parsed);
                 break;
+                /*
             case "popm":
                 popm.execute(parsed);
                 break;
@@ -67,17 +68,16 @@ public class Getter {
             case "pushv":
                 pushv.execute(parsed);
                 break;
-                /*
             case "sub":
                 sub.execute(parsed);
                 break;
+                /*
             case "subr":
                 subr.execute(parsed);
                 break;
             case "swp":
                 swp.execute(parsed);
                 break;
-
                  */
             default:
                 System.out.println("Invalid");
