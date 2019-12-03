@@ -19,9 +19,11 @@ public class Getter {
             case "cmplt":
                 cmplt.execute(parsed);
                 break;
+                */
             case "decl":
                 decl.execute(parsed);
                 break;
+                /*
             case "div":
                 div.execute(parsed);
                 break;
@@ -46,24 +48,26 @@ public class Getter {
             case "popm":
                 popm.execute(parsed);
                 break;
+                */
             case "popv":
                 popv.execute(parsed);
                 break;
-
-             */
             case "printi":
                 printi.execute(parsed);
                 break;
             case "ret":
                 ret.execute(parsed);
                 break;
-                /*
             case "printv":
                 printv.execute(parsed);
                 break;
-            case "push":
-                push.execute(parsed);
+            case "pushi":
+                pushi.execute(parsed);
                 break;
+            case "pushv":
+                pushv.execute(parsed);
+                break;
+                /*
             case "sub":
                 sub.execute(parsed);
                 break;
