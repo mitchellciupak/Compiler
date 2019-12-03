@@ -25,7 +25,6 @@ public class Getter {
             case "div":
                 div.execute(parsed);
                 break;
-                /*
             case "jmp":
                 jmp.execute(parsed);
                 break;
@@ -35,7 +34,6 @@ public class Getter {
             case "lab":
                 lab.execute(parsed);
                 break;
-                */
             case "mul":
                 mul.execute(parsed);
                 break;
