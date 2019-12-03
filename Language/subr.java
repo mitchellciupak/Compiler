@@ -16,19 +16,19 @@ public class subr {
         FileOutput.write(x);
 
         //pushi 16
-        char c = 70;
+        c = 70;
         FileOutput.write(c);
 
-        int i = 17; //Integer.parseInt(parsed[1]);
-        byte[] x = ByteBuffer.allocate(4).putInt(i).array();
+        i = 17; //Integer.parseInt(parsed[1]);
+        x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
         //pushi 1
-        char c = 70;
+        c = 70;
         FileOutput.write(c);
 
-        int i = 1; //Integer.parseInt(parsed[1]);
-        byte[] x = ByteBuffer.allocate(4).putInt(i).array();
+        i = 1; //Integer.parseInt(parsed[1]);
+        x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
         //call

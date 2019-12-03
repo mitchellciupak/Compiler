@@ -34,8 +34,8 @@ class Main{
         //Run interpreter
         //String[] command1 = { "g++", "-WhateverFlag", "-o", "interpreter" };
         //Process proc1 = new ProcessBuilder(command1).start();
-        String[] command2 = { "interpreter", "arg1", "arg2" };
-        Process proc2 = new ProcessBuilder(command2).start();
+        //String[] command2 = { "interpreter", "arg1", "arg2" };
+        //Process proc2 = new ProcessBuilder(command2).start();
     }
 
     /*  LineParse

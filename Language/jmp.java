@@ -6,7 +6,7 @@ public class jmp {
     public static void execute(String[] parsed){
         //pushi (label)
         int i = (int) symbolTable.ST.get(parsed[1]);
-        char c = 70;
+        char c = 74;
         FileOutput.write(c);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);

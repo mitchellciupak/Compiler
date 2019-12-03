@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 public class poke {
     public static void execute(String[] parsed) {
         //pushi (var)
-        int i = (int) symbolTable.ST.get(parsed[1]);
+        int i = (int) symbolTable.ST.get(parsed[2]);
         char c = 70;
         FileOutput.write(c);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();

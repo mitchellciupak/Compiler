@@ -14,7 +14,7 @@ public class peek {
         //pushi val
         c = 70;
         FileOutput.write(c);
-        i = Integer.parseInt(parsed[1]);
+        i = Integer.parseInt(parsed[2]);
         x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 

@@ -67,11 +67,9 @@ public class Getter {
             case "sub":
                 sub.execute(parsed);
                 break;
-                /*
             case "subr":
                 subr.execute(parsed);
                 break;
-                 */
             case "swp":
                 swp.execute(parsed);
                 break;
