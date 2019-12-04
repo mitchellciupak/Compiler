@@ -11,5 +11,6 @@ public class popv {
         FileOutput.write(x);
         c = 80;
         FileOutput.write(c);
+        symbolTable.PC += 7;
     }
 }

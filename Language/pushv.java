@@ -11,5 +11,6 @@ public class pushv {
         FileOutput.write(x);
         c = 74;
         FileOutput.write(c);
+        symbolTable.PC += 7;
     }
 }

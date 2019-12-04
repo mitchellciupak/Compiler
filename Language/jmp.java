@@ -15,7 +15,9 @@ public class jmp {
             //bc.jmp
             c = 36;
             FileOutput.write(c);
+            symbolTable.PC += 7;
         }catch(NullPointerException ex){
+            symbolTable.PC += 7;
             return;
         }
     }

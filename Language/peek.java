@@ -20,5 +20,6 @@ public class peek {
 
         c = 86;
         FileOutput.write(c);
+        symbolTable.PC += 13;
     }
 }

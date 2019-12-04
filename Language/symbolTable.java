@@ -5,6 +5,7 @@ import java.util.Hashtable;
 
 public class symbolTable {
     public static Dictionary ST = new Hashtable();
+    public static int PC = 0;
     public static int offset = 0;
     public void add(String name, int offset){
         ST.put(name,offset);

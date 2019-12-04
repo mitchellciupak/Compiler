@@ -9,5 +9,6 @@ public class pushi {
         int i = Integer.parseInt(parsed[1]);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
+        symbolTable.PC += 6;
     }
 }

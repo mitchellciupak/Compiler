@@ -11,5 +11,6 @@ public class popm {
         FileOutput.write(x);
         c = 76;
         FileOutput.write(c);
+        symbolTable.PC += 7;
     }
 }

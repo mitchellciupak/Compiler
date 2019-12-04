@@ -21,5 +21,6 @@ public class poke {
 
         c = 90;
         FileOutput.write(c);
+        symbolTable.PC +=13;
     }
 }

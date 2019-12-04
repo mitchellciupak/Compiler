@@ -10,6 +10,7 @@ public class decl {
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
         symbolTable.ST.put(parsed[1],symbolTable.offset++);
+        symbolTable.PC += 6;
     }
 }
 

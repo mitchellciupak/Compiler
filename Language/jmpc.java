@@ -16,7 +16,9 @@ public class jmpc {
             //bc.jmpc
             c = 40;
             FileOutput.write(c);
+            symbolTable.PC += 7;
         }catch (NullPointerException ex){
+            symbolTable.PC += 7;
             return;
         }
     }

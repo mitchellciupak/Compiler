@@ -10,5 +10,6 @@ public class printi {
         FileOutput.write(x);
         c = 146;
         FileOutput.write(c);
+        symbolTable.PC += 7;
     }
 }

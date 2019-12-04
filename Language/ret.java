@@ -13,5 +13,6 @@ public class ret {
         FileOutput.write(c);
         c = 48;
         FileOutput.write(c);
+        symbolTable.PC += 8;
     }
 }

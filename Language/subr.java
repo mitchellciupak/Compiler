@@ -38,5 +38,6 @@ public class subr {
         //halt
         c = 0;
         FileOutput.write(c);
+        symbolTable.PC += 20;
     }
 }

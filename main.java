@@ -34,6 +34,7 @@ class Main{
                 e.printStackTrace();
             }
             if(i == 0){
+                symbolTable.PC = 0;
                 symbolTable.offset = 0;
                 //FileOutput.outfile.close();
                 File file = new File("output.bin");

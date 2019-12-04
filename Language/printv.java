@@ -13,5 +13,6 @@ public class printv {
         FileOutput.write(c);
         c = 146;
         FileOutput.write(c);
+        symbolTable.PC += 8;
     }
 }
