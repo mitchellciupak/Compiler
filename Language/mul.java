@@ -5,5 +5,7 @@ public class mul {
         char c = 108;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        symbolTable.mem.add(108);
     }
 }

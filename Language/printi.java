@@ -8,8 +8,16 @@ public class printi {
         int i = Integer.parseInt(parsed[1]);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
+
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 146;
         FileOutput.write(c);
-        symbolTable.PC += 7;
+        symbolTable.PC += 6;
+
+        //
+        symbolTable.mem.add(146);
     }
 }

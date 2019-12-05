@@ -5,5 +5,7 @@ public class cmpgt {
         char c = 140;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        symbolTable.mem.add(140);
     }
 }

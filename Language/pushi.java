@@ -9,6 +9,10 @@ public class pushi {
         int i = Integer.parseInt(parsed[1]);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
-        symbolTable.PC += 6;
+        symbolTable.PC += 5;
+
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
     }
 }

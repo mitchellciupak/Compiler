@@ -5,5 +5,8 @@ public class sub {
         char c = 104;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        //
+        symbolTable.mem.add(104);
     }
 }

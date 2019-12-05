@@ -5,5 +5,8 @@ public class swp {
         char c = 94;
         FileOutput.write(c);
         symbolTable.PC +=1;
+
+        //
+        symbolTable.mem.add(94);
     }
 }

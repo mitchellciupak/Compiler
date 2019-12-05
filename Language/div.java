@@ -5,5 +5,6 @@ public class div {
         char c = 112;
         FileOutput.write(c);
         symbolTable.PC += 1;
+        symbolTable.mem.add(112);
     }
 }

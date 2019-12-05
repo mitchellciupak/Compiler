@@ -9,10 +9,22 @@ public class printv {
         FileOutput.write(c);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
+
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 74;
         FileOutput.write(c);
+
+        //
+        symbolTable.mem.add(74);
+
         c = 146;
         FileOutput.write(c);
-        symbolTable.PC += 8;
+        symbolTable.PC += 7;
+
+        //
+        symbolTable.mem.add(146);
     }
 }

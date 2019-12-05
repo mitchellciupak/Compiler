@@ -5,5 +5,8 @@ public class cmplt {
         char c = 136;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        //
+        symbolTable.mem.add(136);
     }
 }

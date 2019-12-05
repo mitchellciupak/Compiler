@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import Language.*;
 
@@ -9,7 +10,7 @@ class Main{
     public static void main(String args[]){
         //We need to call a dictionary init to build a dictionary of opp codes
         opCode oc = new opCode();
-
+        symbolTable.mem = new ArrayList<Integer>();
         //init the outfile
         FileOutput outfile;
 
@@ -36,6 +37,7 @@ class Main{
             if(i == 0){
                 symbolTable.PC = 0;
                 symbolTable.offset = 0;
+                symbolTable.mem.clear();
                 //FileOutput.outfile.close();
                 File file = new File("output.bin");
                 file.delete();

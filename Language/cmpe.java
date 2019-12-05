@@ -5,5 +5,8 @@ public class cmpe {
         char c = 132;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        //
+        symbolTable.mem.add(132);
     }
 }

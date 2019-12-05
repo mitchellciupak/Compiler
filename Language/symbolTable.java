@@ -1,5 +1,6 @@
 package Language;
 
+import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
@@ -10,4 +11,5 @@ public class symbolTable {
     public void add(String name, int offset){
         ST.put(name,offset);
     }
+    public static ArrayList<Integer> mem;
 }

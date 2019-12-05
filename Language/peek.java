@@ -11,15 +11,24 @@ public class peek {
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
-        //pushi val
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 70;
         FileOutput.write(c);
         i = Integer.parseInt(parsed[2]);
         x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 86;
         FileOutput.write(c);
-        symbolTable.PC += 13;
+        symbolTable.PC += 11;
+
+        symbolTable.mem.add(86);
     }
 }

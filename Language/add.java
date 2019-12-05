@@ -5,5 +5,8 @@ public class add {
         char c = 100;
         FileOutput.write(c);
         symbolTable.PC += 1;
+
+        //
+        symbolTable.mem.add(100);
     }
 }

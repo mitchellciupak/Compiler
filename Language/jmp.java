@@ -6,7 +6,7 @@ public class jmp {
     public static void execute(String[] parsed){
         //pushi (label)
         try{
-            int i = (int) symbolTable.ST.get(parsed[1]) + 1;
+            int i = (int) symbolTable.ST.get(parsed[1]);
             char c = 70;
             FileOutput.write(c);
             byte[] x = ByteBuffer.allocate(4).putInt(i).array();
@@ -15,9 +15,17 @@ public class jmp {
             //bc.jmp
             c = 36;
             FileOutput.write(c);
-            symbolTable.PC += 7;
+            symbolTable.PC += 6;
+
+            symbolTable.mem.add(70);
+            symbolTable.mem.add(i);
+            symbolTable.mem.add(36);
+
         }catch(NullPointerException ex){
-            //symbolTable.PC += 2;
+            symbolTable.PC += 6;
+            symbolTable.mem.add(70);
+            symbolTable.mem.add(0);
+            symbolTable.mem.add(36);
             return;
         }
     }

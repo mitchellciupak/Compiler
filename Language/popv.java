@@ -9,8 +9,16 @@ public class popv {
         FileOutput.write(c);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
+
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 80;
         FileOutput.write(c);
-        symbolTable.PC += 7;
+        symbolTable.PC += 6;
+
+        //
+        symbolTable.mem.add(80);
     }
 }

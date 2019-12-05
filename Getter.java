@@ -74,7 +74,6 @@ public class Getter {
                 swp.execute(parsed);
                 break;
             default:
-                System.out.println("Invalid");
                 break;
         }
     }

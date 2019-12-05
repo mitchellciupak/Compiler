@@ -11,6 +11,10 @@ public class poke {
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         //pushi val
         c = 70;
         FileOutput.write(c);
@@ -18,9 +22,15 @@ public class poke {
         x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
 
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
 
         c = 90;
         FileOutput.write(c);
-        symbolTable.PC +=13;
+        symbolTable.PC +=11;
+
+        //
+        symbolTable.mem.add(90);
     }
 }

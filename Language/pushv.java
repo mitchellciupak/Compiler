@@ -9,8 +9,16 @@ public class pushv {
         FileOutput.write(c);
         byte[] x = ByteBuffer.allocate(4).putInt(i).array();
         FileOutput.write(x);
+
+        //
+        symbolTable.mem.add(70);
+        symbolTable.mem.add(i);
+
         c = 74;
         FileOutput.write(c);
-        symbolTable.PC += 7;
+        symbolTable.PC += 6;
+
+        //
+        symbolTable.mem.add(74);
     }
 }
