@@ -7,7 +7,7 @@ public class jmpc {
     public static void execute(String[] parsed){
         //pushi (label)
         try{
-            int i = (int) symbolTable.ST.get(parsed[1]);
+            int i = (int) symbolTable.ST.get(parsed[1]) + 1;
             char c = 70;
             FileOutput.write(c);
             byte[] x = ByteBuffer.allocate(4).putInt(i).array();
@@ -18,7 +18,7 @@ public class jmpc {
             FileOutput.write(c);
             symbolTable.PC += 7;
         }catch (NullPointerException ex){
-            symbolTable.PC += 7;
+            //symbolTable.PC += 2;
             return;
         }
     }
